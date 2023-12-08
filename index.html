@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal || www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Side Navigation Bar in HTML CSS JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--slider--->
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    
+    <!--font---->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo_item">
+        <i class="bx bx-menu" id="sidebarOpen"></i>
+        <img src="images/logo.png" alt=""></i>Assamese 
+      </div>
+
+      <div class="search_bar">
+        <input type="text" placeholder="Search" />
+      </div>
+
+      <div class="navbar_content">
+        <i class="bi bi-grid"></i>
+        <i class='bx bx-sun' id="darkLight"></i>
+        <i class='bx bx-bell' ></i>
+        <img src="images/profile.jpg" alt="" class="profile" />
+      </div>
+    </nav>
+
+    <!-- sidebar -->
+    <nav class="sidebar">
+      <div class="menu_content">
+        <ul class="menu_items">
+          <div class="menu_title menu_dahsboard"></div>
+          <!-- duplicate or remove this li tag if you want to add or remove navlink with submenu -->
+          <!-- start -->
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-home-alt"></i>
+              </span>
+              <span class="navlink">Home</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+            </ul>
+          </li>
+          <!-- end -->
+
+          <!-- duplicate this li tag if you want to add or remove  navlink with submenu -->
+          <!-- start -->
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-grid-alt"></i>
+              </span>
+              <span class="navlink">Overview</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              <a href="#" class="nav_link sublink">Nav Sub Link</a>
+            </ul>
+          </li>
+          <!-- end -->
+        </ul>
+
+        <ul class="menu_items">
+          <div class="menu_title menu_editor"></div>
+          <!-- duplicate these li tag if you want to add or remove navlink only -->
+          <!-- Start -->
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bxs-magic-wand"></i>
+              </span>
+              <span class="navlink">Magic build</span>
+            </a>
+          </li>
+          <!-- End -->
+
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-loader-circle"></i>
+              </span>
+              <span class="navlink">Filters</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-filter"></i>
+              </span>
+              <span class="navlink">Filter</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-cloud-upload"></i>
+              </span>
+              <span class="navlink">Upload new</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu_items">
+          <div class="menu_title menu_setting"></div>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-flag"></i>
+              </span>
+              <span class="navlink">Notice board</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-medal"></i>
+              </span>
+              <span class="navlink">Award</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-cog"></i>
+              </span>
+              <span class="navlink">Setting</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-layer"></i>
+              </span>
+              <span class="navlink">Features</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Sidebar Open / Close -->
+        <div class="bottom_content">
+          <div class="bottom expand_sidebar">
+            <span> Expand</span>
+            <i class='bx bx-log-in' ></i>
+          </div>
+          <div class="bottom collapse_sidebar">
+            <span> Collapse</span>
+            <i class='bx bx-log-out'></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!-----main---->
+    <div class="main">
+        
+        <!--slder-->
+        
+       <div class="heading-topics">
+         <h3 class="topics">Ads </h3>
+       </div>
+       
+     <div class="swiffy-slider">
+    <ul class="slider-container">
+        <li><img src="/Side Navigation Bar/images/Chemistry.jpg" style="max-width: 100%;height: auto;">
+        </li>
+        <li><img src="/Side Navigation Bar/images/English .jpg" style="max-width: 100%;height: auto;"></li>
+        <li><img src="/Side Navigation Bar/images/bidhan.jpg" style="max-width: 100%;height: auto;"></li>
+    </ul>
+
+    <button type="button" class="slider-nav"></button>
+    <button type="button" class="slider-nav slider-nav-next"></button>
+
+    <div class="slider-indicators">
+        <button class="active"></button>
+        <button></button>
+        <button></button>
+    </div>
+</div>
+
+<div class="Chapter"> 
+
+<div class="headline">
+HomeClass 12 Assamese (AHSEC) 112মোৰ মাতৃমুখ দৰ্শন | Class 12 Assamese Answer | Lesson 1 | HS 2nd Year Assamese Answer | অসমীয়া উত্তৰ | উচ্চতৰ মাধ্যমিক দ্বিতীয় বাৰ্ষিক |
+মোৰ মাতৃমুখ দৰ্শন | Class 12 Assamese Answer | Lesson 1 | HS 2nd Year Assamese Answer | অসমীয়া উত্তৰ | উচ্চতৰ মাধ্যমিক দ্বিতীয় বাৰ্ষিক |
+</div>
+<div class="ch-no">পাঠ -১</div>
+<div class="ch-name">মোৰ মাতৃমুখ দৰ্শন</div>
+
+
+
+
+অতি চমু প্ৰশ্ন (মূল্যাংক-১)
+
+<p><b>১। 'মোৰ মাতৃমুখ দৰ্শন' শীৰ্ষক পাঠটো ক’ৰপৰা সংগ্ৰহ কৰা হৈছে?</b></p><br>
+<p>উত্তৰঃ 'মোৰ মাতৃমুখ দৰ্শন' শীৰ্ষক পাঠটো ড॰ নগেন শইকীয়া সম্পাদিত বেজবৰুৱা ৰচনাৱলী ( প্ৰথম খণ্ড ) পৰা লোৱা হৈছে।</p><br>
+
+<p><b>২। সম্বলপুৰ ভাৰতৰ কোনখন ৰাজ্যত অৱস্থিত?</b></p><br>
+<p>উত্তৰঃ সম্বলপুৰ ভাৰতৰ উৰিষ্যাত অৱস্থিত ৷
+</p><br>
+
+<p><b>৩। বেজবৰুৱাই মাতৃমুখ দৰ্শনৰ বাবে ক’ৰপৰা ক’লৈ যাত্ৰা কৰিছিল?</b></p><br>
+<p>উত্তৰঃ বেজবৰুৱাই মাতৃমুখ দৰ্শনৰ বাবে উৰিষ্যাৰ সম্বলপুৰৰ পৰা অসমলৈ যাত্ৰা কৰিছিল ৷
+</p><br>
+
+<p><b>৪। ১৯৩০ চনৰ ১৯ ছেপ্তেম্বৰত সম্বলপুৰৰ পৰা অসমলৈ যাত্ৰা কৰোঁতে বেজবৰুৱাৰ সংগী কোন আছিল?</b></p><br>
+<p>উত্তৰঃ ১৯৩০ চনৰ ১৯ ছেপ্তেম্বৰত সম্বলপুৰৰ পৰা অসমলৈ যাত্ৰা কৰোঁতে বেজবৰুৱাৰ সংগী আছিল তেওঁৰ সহধৰ্মিনী প্ৰজ্ঞাসুন্দৰী আৰু সৰুজনী কন্যা ৷
+</p><br>
+
+<p><b>৫। লক্ষ্মীনাথ বেজবৰুৱাৰ ৰচিত এখন ধেমেলীয়া নাটকৰ নাম লিখা ৷</b></p><br>
+<p>উত্তৰঃ লক্ষ্মীনাথ বেজবৰুৱাৰ ৰচিত এখন ধেমেলীয়া নাটকৰ নাম 'লিতিকাই’৷
+</p><br>
+
+
+<p><b>চমু প্ৰশ্ন (মূল্যাংক-২/৩)</b></p><br>
+
+<p><b>১। 'মোৰ মাতৃমুখ দৰ্শন' শীৰ্ষক পাঠটিৰ নামাকৰণৰ তাৎপৰ্য ব্যাখ্যা কৰা ৷</b></p><br>
+<p>উত্তৰঃ কৰ্মসূত্ৰে উৰিষ্যাৰ সম্বলপুৰত থাকিবলৈ যোৱা সাহিত্যৰথী বেজবৰুৱাই কৰ্মব্যস্ততাৰ বাবে দীৰ্ঘদিন ধৰি মাতৃভূমি অসমৰ পৰা আঁতৰি থাকিবলগীয়া হৈছিল ৷ প্ৰায় ডেৰ-দুকুৰি বছৰৰ পিছত মাতৃভূমি অসমলৈ অহাৰ কথাটো তেওঁ মাতৃৰ মুখ দৰ্শনৰ লগত ৰিজাইছে৷ সেয়েহে পাঠটিৰ নাম 'মোৰ মাতৃমুখ দৰ্শন' দিয়া হৈছে ৷
+</p><br>
+
+<p><b>২। 'মোৰ মাতৃমুখ দৰ্শন' শীৰ্ষটিত 'মাতৃ' শব্দৰে কি বুজোৱা হৈছে? কিমান বছৰৰ পিছত লেখকৰ মাতৃমুখ দৰ্শন হৈছিল?</b></p><br>
+<p>উত্তৰঃ 'মোৰ মাতৃমুখ দৰ্শন' শীৰ্ষটিত 'মাতৃ' শব্দৰে মাতৃভূমি অসমক বুজোৱা হৈছে ৷ প্ৰায় ডেৰ-দুকুৰি বছৰৰ পিছত লেখকৰ মাতৃমুখ দৰ্শন হৈছিল ৷</p><br>
+
+
+<p><b>৩। লক্ষ্মীনাথ বেজবৰুৱাক কটন কলেজৰ ছাত্ৰসকলে কিদৰে অভিনন্দন জনাইছিল?</b></p><br>
+<p>উত্তৰঃ গুৱাহাটীত অহাৰ পিছত কটন কলেজৰ ছাত্ৰসকলে গধূলি সভা পাতি বেজবৰুৱাক নিমন্ত্ৰণ কৰিছিল আৰু সভাত তেওঁলোকৰ একোজনে শুৱলাকৈ ইংৰাজী আৰু অসমীয়াত ভাষণ দিছিল ৷ কোনোৱে সুললিত কণ্ঠেৰে গীত গাইছিল আৰু কোনোৱে বিয়াহৰ ওজাপালি গাই লেখকক আহ্লাদিত কৰিছিল ৷ এনেদৰেই ছাত্ৰসকলে লেখকক অভিনন্দন জনাইছিল ৷</p><br>
+
+
+<p><b>৪। 'মোৰ মাতৃমুখ দৰ্শন’ৰ লেখকে উল্লেখ কৰা 'মাজিউ’ আৰু 'জ্ঞান’ কোন আছিল?</b></p><br>
+<p>উত্তৰঃ 'মোৰ মাতৃমুখ দৰ্শন’ৰ লেখকে উল্লেখ কৰা 'মাজিউ’ আছিল কবি আৰু বিখ্যাত চাহ খেতিয়ক সদাগৰ চন্দ্ৰকুমাৰ আগৰৱালা আৰু 'জ্ঞান’ আছিল আৰ্ল ল কলেজৰ প্ৰিন্সিপাল জে. বৰুৱা বেৰিষ্টাৰ এট্-লৰ ৷</p><br>
+
+
+<p><b>৫। লক্ষ্মীনাথ বেজবৰুৱাৰ গুৱাহাটীক ভাল লগাৰ তিনিটা কাৰণ উল্লেখ কৰা ৷</b></p><br>
+<p>উত্তৰঃ লক্ষ্মীনাথ বেজবৰুৱাৰ গুৱাহাটীক ভাল লগাৰ তিনিটা কাৰণ-
+
+ক) প্ৰাকৃতিক সৌন্দৰ্য- ব্ৰহ্মপুত্ৰৰ মাজৰ উমানন্দ, কামাখ্যা, অশ্বক্ৰান্ত আদি অলেখ অতুলনীয় প্ৰাকৃতিক সৌন্দৰ্যৰে গুৱাহাটী ভৰপূৰ ৷ এই সমূহে লেখকক আনন্দ দিছিল ৷
+
+খ) ঐতিহাসিক উৎকৰ্ষ- গুৱাহাটী বিভিন্ন ঐতিহাসিক স্থানেৰে ভৰপূৰ ৷ এইবোৰে তীৰ্থযাত্ৰীৰ তীৰ্থস্পৃহা পলুৱাব পাৰে ৷ এই ঐতিহাসিক স্থানসমূহৰ বাবেও গুৱাহাটীক লেখকে বৰ ভাল পায় ৷
+
+গ) প্ৰাচীন জ্ঞান-গৌৰৱৰ গৰিমা- গুৱাহাটীত থকা বহু প্ৰাচীন স্থানে প্ৰত্নতাত্ত্বিক প্ৰাচীন জ্ঞানৰ দুৱাৰ মুকলি কৰি মনত বিস্ময় জগাই দিব পাৰে ৷ এইবোৰৰ বাবেও গুৱাহাটী লেখকৰ বৰ আদৰৰ ৷</p><br>
+
+
+<p><b>দীঘল প্ৰশ্ন (মূল্যাংক-৪/৫)</b></p><br>
+
+<p><b>১। 'মোৰ মাতৃমুখ দৰ্শন’ পাঠটিৰ আধাৰত লক্ষ্মীনাথ বেজবৰুৱাই সম্বলপুৰৰ পৰা গুৱাহাটীলৈ কৰা ৰে'লযাত্ৰাৰ চমু বিৱৰণ আগবঢ়োৱা ৷</b></p><br>
+<p>উত্তৰঃ কৰ্মসূত্ৰে উৰিষ্যাৰ সম্বলপুৰত থাকিবলৈ লোৱা সাহিত্যৰথী বেজবৰুৱাই কৰ্মব্যস্ততাৰ বাবে দীৰ্ঘদিন ধৰি মাতৃভূমি অসমলৈ আহিব পৰা নাছিল ৷ অৱশেষত ১৯৩০ চনৰ ১৯ চেপ্তেম্বৰত সম্বলপুৰৰপৰা অসমলৈ বুলি যাত্ৰা আৰম্ভ কৰে ৷ সংগী আছিল সহধৰ্মিনী প্ৰজ্ঞা সুন্দৰী আৰু সৰু জী ৷ বেংগল-নাগপুৰ ৰেলেৰে সম্বলপুৰৰ পৰা দুঘণ্টা যাত্ৰা কৰি তেওঁ ঝাৰচোগোড়া জংচনত নামে আৰু তাৰ পৰা কলিকতা অভিমুখী ৰেলত উঠে ৷ তেওঁলোকে লগত খোৱা বস্তু নিয়া নাছিল ৷ যাৰ বাবে তেওঁৰ পৰিয়ালটো ভোকে-লঘোণে যাব লগা হ’ল ৷ ২৯ চেপ্তেম্বৰৰ ৰাতি ৮ মান বজাত তেওঁ কলিকতাত নামি এঠাইত এমুঠি খাই নিশাটোৰ বাবে জিৰণি ল’লে ৷ কলিকতাৰপৰা অসম অভিমুখী যাত্ৰাত আকৌ গাড়ীখনত অত্যাধিক যাত্ৰী উঠিও লেখকৰ পৰিয়ালক যথেষ্ট আহুকালত পেলালে ৷ ২১ চেপ্তেম্বৰত লেখকৰ পৰিয়ালে শিয়ালদাহ ষ্টেচন এৰি ২২ চেপ্তেম্বৰত গুৱাহাটীত উপস্থিত হয়হি ৷</p><br>
+
+
+<p><b> ২। 'মোৰ মাতৃমুখ দৰ্শন’ পাঠটিত লেখকে উল্লেখ কৰা মহাদেৱৰ কৃষিকৰ্মৰ কাহিনীটো তোমাৰ নিজৰ ভাষাত লিখা ৷</b></p><br>
+<p> উত্তৰঃ মহাদেৱে কাম বন নকৰি ভাং ধতুৰা খাই ঘৰতে বহি থকা দেখি এদিন পাৰ্বতীয়ে ককৰ্থনা কৰিলে ৷ ঘৰতে বৃষভটো আছে, ঘাঁহ পানী খাই নোদোকাটো হৈছে ৷ তাৰেই হাল বাই খেতি বাতি কৰি ধান এগালমান আৰ্জিব পাৰে বুলি ধিক্কাৰ দিলে ৷ পাৰ্বতীৰ কথা শুনি মহাদেৱৰ বৰ বেজাৰ লাগিল ৷ লগে লগেই খেতি কৰিবলৈ যাবলৈ দৃঢ় সংকল্প ল’লে আৰু বৃষভৰ ওপৰত উঠি পথাৰলৈ গ’ল ৷ কৃষিকৰ্ম আৰম্ভ হ’ল ৷ কিছুদিনৰ ভিতৰতে খেতি কৰি গোটেইখন উভয়নদী কৰি পেলালে ৷ শোৱা, খোৱা গুছিল ৷ ঘৰলৈ আহিবলৈ এৰিলে ৷ ইফালে হিতে বিপৰীতে হোৱাত পাৰ্বতী সমস্যাত পৰিল ৷ গিৰিয়েকক ঘৰলৈ মাতি আনিবলৈ নন্দী ভৃংগীকে আদি কৰি যোৰে যোৰে মানুহ পঠিয়াবলৈ ধৰিলে ৷ পিছে কামত নাহিল ৷ এইবাৰ নাৰদক ৰিপুৱা ধৰিলে ৷ নাৰদে মহাদেৱক ঘৰলৈ আহিবলৈ খাটনি ধৰিলে ৷ কাৰো কথা নুশুনা মহাদেৱে নাৰদৰ খাটনিকো কাণ নকৰিলে ৷ অনেক ভাবি পাৰ্বতীয়ে এইবাৰ অসংখ্য মহ-ডাঁহ, চেৰেপা সৃষ্টি কৰি মহাদেৱক আমনি কৰিবলৈ পঠাই দিলে ৷ একো কামত নাহিল ৷ অৱশেষত হাহা আৰু হুহু নামৰ দুটা মানসপুত্ৰ সৃষ্টি কৰি পঠিয়াই দিয়াত মহাদেৱৰ সমস্ত খেতি পুৰি ধ্বংস কৰিলে ৷</p><br>
+
+<p><b>৩। হাহা হুহু কোন আছিল? এওঁলোকক কি কাৰণে সৃষ্টি কৰিছিল লিখা ৷ </b></p><br>
+<p>উত্তৰঃ হাহা হুহু পাৰ্বতীৰ মানসপুত্ৰ আছিল ৷
+                    মহাদেৱে কাম বন নকৰি ভাং ধতুৰা খাই ঘৰতে বহি থকা দেখি এদিন পাৰ্বতীয়ে ককৰ্থনা কৰিলে ৷ ঘৰতে বৃষভটো আছে, ঘাঁহ পানী খাই নোদোকাটো হৈছে ৷ তাৰেই হাল বাই খেতি বাতি কৰি ধান এগালমান আৰ্জিব পাৰে বুলি ধিক্কাৰ দিলে ৷ পাৰ্বতীৰ কথা শুনি মহাদেৱৰ বৰ বেজাৰ লাগিল ৷ লগে লগেই খেতি কৰিবলৈ যাবলৈ দৃঢ় সংকল্প ল’লে আৰু বৃষভৰ ওপৰত উঠি পথাৰলৈ গ’ল ৷ কৃষিকৰ্ম আৰম্ভ হ’ল ৷ কিছুদিনৰ ভিতৰতে খেতি কৰি গোটেইখন উভয়নদী কৰি পেলালে ৷ শোৱা, খোৱা গুছিল ঘৰলৈ আহিবলৈ এৰিলে ৷ ইফালে হিতে বিপৰীতে হোৱাত পাৰ্বতী সমস্যাত পৰিল ৷ গিৰিয়েকক ঘৰলৈ মাতি আনিবলৈ নন্দী ভৃংগীকে আদি কৰি যোৰে যোৰে মানুহ পঠিয়াবলৈ ধৰিলে ৷ পিছে কামত নাহিল ৷ এইবাৰ নাৰদক ৰিপুৱা ধৰিলে ৷ নাৰদে মহাদেৱক ঘৰলৈ আহিবলৈ খাটনি ধৰিলে ৷ কাৰো কথা নুশুনা মহাদেৱে নাৰদৰ খাটনিকো কাণ নকৰিলে ৷ অনেক ভাবি পাৰ্বতীয়ে এইবাৰ অসংখ্য মহ-ডাঁহ, চেৰেপা সৃষ্টি কৰি মহাদেৱক আমনি কৰিবলৈ পঠাই দিলে ৷ একো কামত নাহিল ৷ অৱশেষত হাহা আৰু হুহু নামৰ দুটা মানসপুত্ৰ সৃষ্টি কৰি পঠিয়াই দিয়াত মহাদেৱৰ সমস্ত খেতি পুৰি ধ্বংস কৰিলে ৷</p><br>
+
+<p><b>৪। 'ডিবৰুগড়ত গোটাচেৰেক কথাই মোক বৰ সন্তোষ দিছিল৷’-ডিবৰুগড়ত কোনবোৰ কথাই বেজবৰুৱাক সন্তোষ দিছিল বুজাই লিখা ৷</b></p><br>
+<p>উত্তৰঃ দীৰ্ঘদিনৰ অন্তত মাতৃভূমিলৈ আহি বেজবৰুৱাই বহু পৰিবৰ্তন দেখা পাইছিল ৷ ডিব্ৰুগড়ৰ গোটাচেৰেক কথাই লেখকক বৰ আনন্দিত কৰিছিল ৷ প্ৰথমে ডিব্ৰুগড়ৰ অসমীয়া তিৰোতাসকল শিক্ষা-দীক্ষা আৰু ৰাজহুৱা কথাদিত পুৰুষৰ সমকক্ষ হ’বলৈ আগবাঢ়িছিল ৷ সভা-সমিতি পতাত তেওঁলোক আগৰণুৱা হৈ পৰিছিল ৷ অথচ তেওঁলোকৰ স্ত্ৰীসূলভ গাম্ভীৰ্য আৰু কমনীয়তাৰ এচুলিমানো হ্ৰাস হ’বলৈ দিয়া নাছিল ৷ সভাই সমিতিয়ে বক্তৃতা দিয়াৰ ক্ষেত্ৰত দুই এগৰাকীয়ে অনেক পুৰুষকো চেৰ পেলাইছিল ৷ দ্বিতীয়তে ডিব্ৰুগড়ৰ ডেকাসকলৰ উদ্যমৰ ফলত সমৃদ্ধ হৈ পৰা ৰংগশালাটো দেখিও লেখকে মনত সন্তোষ পাইছিল ৷ থিয়েটাৰৰ বাবে অসমীয়া চিত্ৰবিদ ডেকাসকলে অঁকা ছবি এনে সুন্দৰ আছিল যে সেইবোৰ কলিকতাৰ নিপুণ চিত্ৰবিদ ডেকাসকলে অঁকা ছবিতকৈ কোনো গুণে কম নাছিল ৷ নাট্যকলাত ডিব্ৰুগড়ৰ সম্ভ্ৰান্তঘৰৰ ডেকাসকলে আশাতীত ভাৱে উন্নতি কৰিছিল ৷ পেইণ্টিং আৰু ফটোগ্ৰাফীত মুক্তানাথ বৰদলৈয়ে কৃতিত্ব দেখুৱাইছিল ৷প্ৰভাতচন্দ্ৰ দাস আৰু জনদিয়েকৰ অভিনয়ে কলিকতাৰ বিখ্যাত অভিনেতাতকৈ কোনোগুণে কম নাছিল৷ এনেবোৰ কথাই লেখকৰ মনত বৰ সন্তোষ দিছিল ৷</p><br>
+
+
+
+<p><b>৫। লক্ষ্মীনাথ বেজবৰুৱাৰ মতে বিদেশী নাটকৰ অসমীয়া অনুবাদ কেনে হোৱা উচিত বুজাই লিখা ৷</b></p><br>
+<p>উত্তৰঃ নাট মঞ্চায়নৰ ক্ষেত্ৰত মৌলিক নাটৰ অভিনয় সৰহ কৰিবলৈ পৰামৰ্শ দি বেজবৰুৱাই কৈছিল যে বিদেশী নাটক মঞ্চায়ন কৰাত তেওঁ বৰ সন্তোষ পালেও ঘোৰ বিৰোধী নহয় ৷ অৱশ্যে তেনে নাটকবোৰৰ অনুবাদ প্ৰকৃত অসমীয়া অনুবাদ হ’ব লাগে বুলি উল্লেখ কৰিছে ৷ ভাল বিদেশী নাটকৰ উৎকৃষ্ট ভাৱ সম্পদেৰে অসমীয়া সাহিত্যৰ সৌন্দৰ্য বঢ়োৱাটো অতি শোভন কথা বুলিও তেওঁ উল্লেখ কৰিছে ৷ কিন্তু সেয়া কৰিবলৈ যাওঁতে বাৰি বঙলুৱা অনুবাদ নকৰি আচল অসমীয়া অনুবাদ হোৱা উচিত বুলিও তেওঁ পৰামৰ্শ দিছে ৷ </p><br>
+
+
+</div>
+
+
+
+   
+   </div>
+   <!---main end---->
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
